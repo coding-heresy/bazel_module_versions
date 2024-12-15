@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "version of bazel_module_versions is '@MODULE_VERSION@'"

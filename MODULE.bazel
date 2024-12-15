@@ -1,0 +1,13 @@
+
+module(
+    name = 'bazel_module_versions',
+    version = '0.0.0',
+)
+
+bazel_dep(
+    name = 'bazel_skylib',
+    version = '1.7.1',
+)
+
+module_versions = use_extension('//:extensions.bzl', 'dependent_module_versions')
+use_repo(module_versions, 'module_versions')
